@@ -62,13 +62,63 @@
       </nav>
     </header>
     <main>
+      <div class="container my-4">
+        <h1>Formulario de Contacto</h1>
+        <span>Forma parte de nuestra comunidad Maya Lover</span>
+  
+        <form>
+          <div class="form-group py-3">
+            <label>Nombre</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="nombre"
+              required="required"
+              data-validation-required-message="Please enter your name."
+            />
+          </div>
+          <div class="form-group">
+            <label>Correo electrónico</label>
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              placeholder="joyas@maya.com"
+              required="required"
+              data-validation-required-message="Please enter your email address."
+            />
+          </div>
+          <div class="form-group py-2">
+            <label>Teléfono</label>
+            <input
+              class="form-control"
+              id="phone"
+              type="tel"
+              placeholder="555555555"
+              required="required"
+              data-validation-required-message="Please enter your phone number."
+            />
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Escribe aquí un breve comentario"
+              required="required"
+              data-validation-required-message="Please enter a message."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-xl my-4">Enviar</button>
+        </form>
+      </div>
     </main>
     <footer id="sectionFooter">
       <section class="section-footer">
         <div class="jumbotron">
           <hr class="my-4" />
-          <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
           <div class="container">
             <div class="row">
               <div class="col-sm">
@@ -79,7 +129,6 @@
                   <li>Política de Devoluciones</li>
                   <li>Preguntas Frecuentes</li>
                 </ul>
-                <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>  -->
               </div>
               <div class="col-sm">
                 <p class="lead"> Información Maya</p>
@@ -110,5 +159,8 @@
   }
   ul {
     list-style: none;
+  }
+  #sectionFooter {
+    background-color: #DCBDBE;
   }
 </style>
